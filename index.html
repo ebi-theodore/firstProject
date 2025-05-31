@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastLearn</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark:bg-gray-900 dark:text-white">
+    <!-- header section -->
+    <nav class="p-5 bg-blue-500 text-white md:flex md:items-center md:justify-between relative">
+  <!-- Logo and Mobile Menu Icon -->
+  <div class="flex justify-between items-center">
+    <span class="text-xl font-bold">FastLearn</span>
+    <!-- Mobile menu icon -->
+    <span class="text-3xl cursor-pointer md:hidden block" onclick="Menu(this)">
+      <ion-icon name="menu-outline"></ion-icon>
+    </span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links"
+    class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-blue-500 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 opacity-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500"
+  >
+    <li class="mx-4 my-6 md:my-0"><a href="#" class="hover:text-gray-300 ">Home</a></li>
+    <li class="mx-4 my-6 md:my-0"><a href="#" class="hover:text-gray-300">Course</a></li>
+    <li class="mx-4 my-6 md:my-0"><a href="#" class="hover:text-gray-300">About Us</a></li>
+    <li class="mx-4 my-6 md:my-0"><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+  </ul>
+
+  <!-- Theme Toggle -->
+  <button id="toggle-theme" class="ml-4 mt-2 md:mt-0">
+    <img id="img" src="/assets/sun.png" class="w-8" alt="Theme Toggle" />
+  </button>
+</nav>
+    <!-- hero section -->
+    
+   <section class="w-full mt-[2rem] dark:text-white py-12 px-6 flex flex-col md:flex-row items-center justify-between">
+  <!-- Text Content -->
+  <div class="md:w-1/2">
+    <h1 class="text-4xl md:text-5xl dark:text-white text-black font-extrabold mb-4">FastLearn</h1>
+    <p class="text-lg mb-6">
+      FastLearn platform: students learn, practice, do projects, and earn 100% free certificates.
+    </p>
+    <button href="#get-started" class="inline-block dark:bg-white  text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition">
+      Get Started
+    </button>
+  </div>
+
+  <!-- Image -->
+  <div class="md:w-1/2 mt-8 md:mt-0">
+    <img src="/assets/masterclass.png" alt="Masterclass" class="w-full h-auto rounded-lg shadow-lg">
+  </div>
+</section>
+<!-- Top couser -->
+<section>
+  <div class="flex justify-center font-extrabold text-2xl">
+    <h1>Top Couser</h1>
+
+  </div>
+  <section>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+  <!-- Card 1 -->
+  <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/web-developer.jpg" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">Web Developer</h3>
+    <p class="text-center px-4">
+      Web development is the process of creating and maintaining websites and web applications that are accessed through a web browser.
+    </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/Generative-AI.png" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">Generative AI</h3>
+    <p class="text-center px-4">
+      Generative AI is a type of artificial intelligence that can create new content, like text, images, audio, and video, by learning from existing data and then generating novel instances.
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/cloud-computer.png" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">Cloud Computing</h3>
+    <p class="text-center px-4">
+      Cloud computing involves delivering computing services like servers, storage, and applications over the internet.
+    </p>
+  </div>
+
+  <!-- Optional: Card 4 (if you want only 3 per row, this one will go to next row on lg screens) -->
+  <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/data-science-course.png" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">Data Science</h3>
+    <p class="text-center px-4">
+      A data science course teaches how to extract knowledge and insights from data using statistical analysis, machine learning, and data visualization.
+    </p>
+  </div>
+   <!-- Card 5 -->
+  <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/blockchain-developer.jpg" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">blockchain-developer</h3>
+    <p class="text-center px-4">
+    A blockchain developer designs, implements, and maintains blockchain systems, including decentralized applications (DApps) and smart contracts. They are responsible for creating the foundational architecture of blockchain networks and ensuring their security and integrity
+    </p>
+  </div>
+   <!-- Card 6 -->
+ <div class="w-full h-auto shadow-md rounded-md dark:bg-white dark:text-black">
+    <img src="/assets/machine-learning.jpg" class="rounded-md w-full" alt="">
+    <h3 class="text-center font-semibold py-2">machine-learning</h3>
+    <p class="text-center px-4">
+   Machine learning (ML) is a field of artificial intelligence (AI) that focuses on building systems that can learn from data without explicit programming. These systems can analyze data, identify patterns, and make predictions or decisions with minimal human intervention
+    </p>
+  </div>
+</section>
+
+<!-- AboutUs -->
+<Section class="flex justify-around items-center w-full lg:flex-row md:flex-row sm:flex-col xm:flex-col">
+  <div>
+    <img src="/assets/e-learning-2-removebg-preview.png" class="w-full h-auto   " alt="">
+  </div>
+  <div>
+    <h1 class="text-center font-bold text-2xl ">AboutUs</h1>
+    <p class="text-center w-[300px]">At FastLearn, we believe that education should be accessible, engaging, and empowering. Founded with the mission to make high-quality learning available to everyone, we provide a wide range of online courses, expert-led tutorials, and interactive resources designed to help learners grow—personally and
+    professionally.Whether you're a student, a working professional, or </p>
+  </div>
+</Section>
+
+<!-- Footer -->
+ <footer class="bg-black w-full h-[200px] text-white lg:flex lg:flex-row lg:justify-between lg:relative md:flex-row md:justify-between m  xm:flex-col xm:items-center">
+  <div>
+   <h1 class="">FastLearn</h1>
+   <h2>Email:FastLearn@gmail.com</h2>
+   <h2>Phone:91+7687998970</h2>
+  </div>
+ 
+  <div class="ml-7">
+    <h3>ContentUs</h3>
+    <h4>Email :</h4>
+    <input type="email" class="bg-white rounded-md h-[25px]" placeholder="Enter the Email">
+    <button class="bg-blue-400 p-2 cursor-pointer rounded-lg">Send</button>
+  </div>
+ <div class="lg:absolute lg:left-[800px] lg:top-[10rem]">
+  <h1>&copy;2025 FastLearn.All Right Reserved</h1>
+ </div>
+ </footer>
+    <script>
+      const btn = document.getElementById("toggle-theme");
+      let img = document.getElementById("img");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")) {
+          img.src = "./assets/moon.png";
+          img.alt = "Dark Mode";
+        } else {
+          img.src = "./assets/sun.png";
+          img.alt = "Light Mode";
+        }
+      });
+      // navbar
+       function Menu(e) {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("top-[60px]");
+    navLinks.classList.toggle("opacity-100");
+  }
+    </script>
+    <!-- icons -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
